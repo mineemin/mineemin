@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>벽돌깨기 게임 - Brick Breaker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>벽돌깨기 게임</h1>
+            <div class="game-info">
+                <div class="info-item">
+                    <span class="label">점수:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">라이프:</span>
+                    <span id="lives">3</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">스테이지:</span>
+                    <span id="stage">1</span>
+                </div>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas"></canvas>
+        
+        <div class="game-controls">
+            <div class="controls-info">
+                <p>조작법: 마우스 이동 또는 ← → 키</p>
+            </div>
+        </div>
+        
+        <div id="gameOverlay" class="overlay">
+            <div class="overlay-content">
+                <h2 id="overlayTitle">게임 시작</h2>
+                <p id="overlayMessage">스페이스바를 눌러 시작하세요</p>
+                <button id="startButton" class="game-button">시작</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
+
